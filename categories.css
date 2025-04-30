@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Georgia', serif;
-  background-image: url('https://as1.ftcdn.net/v2/jpg/05/92/97/76/1000_F_592977628_33f5LA1jTEBWuwkMjQf4SGe8M53xZdAZ.jpg');
+  background-image: url('https://static-cse.canva.com/blob/1427864/ImagebyStanislavKondratievviaUnsplash.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,21 +20,44 @@ body {
 /* --- Header --- */
 header {
   background-color: rgba(0, 0, 0, 0.85);
-  padding: 1rem;
-  text-align: center;
+  padding: 2rem 1rem;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #ffe8b3;
+  margin: 0;
+  font-family: 'Georgia', serif;
+}
+
+header nav {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 header nav a {
   color: #b8e0d2;
   text-decoration: none;
-  margin: 0 10px;
   font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
 }
 
 header nav a:hover {
   text-decoration: underline;
+  color: #fff;
 }
+/* --- Header (Centered Title & Nav Buttons) --- */
+
+
+
 
 /* --- Main Content --- */
 main {
