@@ -7,36 +7,40 @@ body {
 }
 
 header {
-  background-color: #3e2723;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 2rem 1rem;
   color: #fff;
-  padding: 1rem 2rem;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
 
 header h1 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  flex: 1 1 100%;
-  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  color: #ffe8b3;
+  margin: 0;
+  font-family: 'Georgia', serif;
 }
 
-nav {
-  flex: 1 1 100%;
-  text-align: right;
+header nav {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-nav a {
-  color: #ffe0b2;
-  margin-left: 1rem;
+header nav a {
+  color: #b8e0d2;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
 }
 
-nav a:hover {
+header nav a:hover {
   text-decoration: underline;
+  color: #fff;
 }
 
 .hero {
