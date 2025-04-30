@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | The Book Capsule</title>
+  <link rel="stylesheet" href="categories.css" />
+  <style>
+    .success-message {
+      display: none;
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>The Book Capsule</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section class="contact-us">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <p>If you have any questions, feedback, or collaboration ideas, feel free to reach out! We’d love to hear from you.</p>
+
+      <form class="contact-form" onsubmit="showSuccess(event)">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <p id="successMsg" class="success-message">Contacted successfully!</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 The Book Capsule.</p>
+  </footer>
+
+  <script>
+    function showSuccess(event) {
+      event.preventDefault(); // Prevent actual form submission
+      const msg = document.getElementById('successMsg');
+      msg.classList.add('show');
+
+      // Hide after 3 seconds
+      setTimeout(() => {
+        msg.classList.remove('show');
+      }, 3000);
+    }
+  </script>
+
+</body>
+</html>
